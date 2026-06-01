@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> LOGIN PAGE </title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <style>
+        
+        body
+        {
+          background-color: white;
+         
+          margin:0;
+        }
+        #container
+        {
+         margin-top: 80px;
+         margin-bottom: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        fieldset
+        {
+            background-color:white;
+            width: 50%;
+            max-width: 700px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #a3ada7;
+            position:relative;
+            
+        }
+        h3{
+            text-align: center;
+            padding: 14px;
+             font-family: "Zen Dots", sans-serif;
+            font-size: 30px;
+        }
+           .icon 
+           {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+           }
+           .icon i{
+           font-size:30px ;
+           color:blue;
+          
+           box-shadow:0 0 30px #6c5df5;
+           border-radius: 50%;
+           padding:10px;
+                }
+        form 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+           gap: 30px;
+        }
+         input[type="password"],input[type="text"]
+         {
+            margin-left: 30px;
+            border:1px solid blue;
+            border-radius: 10px;
+            height: 40px;
+            outline: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 10px;
+            transition: 0.3s ease all;
+         }
+            input[type="password"]:hover,input[type="text"]:hover
+            {
+                transform: scale(1.05);
+            }
+             input[type="password"]:focus,input[type="text"]:focus
+             {
+                border:1px solid green;
+             }
+         input::placeholder
+         {
+            color:black;
+            font-family: 'Poppins',sans-serif;
+            letter-spacing: 0.5px;
+            padding-left:5px;
+         }
+        #submit
+        {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]
+        {
+            background: linear-gradient(135deg,#5656e1,blue);
+            border: none;
+            width: 90%;
+            margin-left: 30px;
+            border:1px solid blue;
+            height: 40px;
+            color:white;
+            font-weight: bold;
+            font-style: 'Poppins',sans-serif;
+            border-radius: 20px;
+            transition: 0.3s ease all;
+        }
+         input[type="submit"]:hover
+         {
+           background: linear-gradient(135deg,blue,#5656e1);
+           transform: scale(1.05);
+         }
+        #top
+        {
+            background:linear-gradient(135deg,#1b1bdc,#3f81e3);
+            border-bottom-left-radius: 50% 40%;
+            border-bottom-right-radius: 50%  40%;
+            box-shadow: 0 0 20px #13d5ae;
+            height: 25vh;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+        }
+        #bot
+        {
+             background:linear-gradient(135deg,#1b1bdc,#3f81e3);
+            border-top-left-radius: 50% 40%;
+            border-top-right-radius: 50%  40%;
+            box-shadow:0 0  20px #13d5ae;
+            height: 25vh;
+        }
+        p
+        {
+            text-align: center;
+            padding-top: 100px;
+            color:white;
+            font-family: 'Poppins',sans-serif;
+        }
+        h6{
+            font-size: 15px;
+            font-family: 'Poppins',sans-serif;       
+        }
+        a{
+            text-decoration:none;
+            color:#1005ee;
+            margin-left: 3px;
+            transition: 0.3s ease all; 
+        }
+        a:hover
+        {
+            color:#1005ee;
+            text-shadow: 0 0 10px #1005ee;
+            font-size:16px;
+        }
+        h1
+        {
+            color:white;
+            font-family: "Rancho", cursive;
+            font-size: 50px;
+            letter-spacing: 2px;
+
+        }
+        
+    </style>
+</head>
+    <body>
+        <div id="top">
+         <h1>Login here</h1>
+        </div>
+        <div id="container">
+        <fieldset>
+       <div class="icon">
+    <i class="fa-solid fa-lock"></i>
+      </div>     
+      <h3>Welcome Back</h3>
+      <form method="POST" action="../authentication/auth.php">
+        <input type="text" name="username" placeholder="Username / Email" required>
+        <input type="password" name="pass" required placeholder="Password">
+           <div id="submit">
+         <input type="submit" value="Sign In">
+       </div>
+       </form>
+          <h6>Don't have..?  <a href="../create/index.html">Register new</a></h6>
+           <h6><a href="../forget/index.html">Forget Password</a>...?</h6>
+           </fieldset>
+        </div>  
+        <div id="bot">
+        <p> Developer:@ adishjagano@gmail.com</p>
+        </div>
+        </body>
+</html>

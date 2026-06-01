@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> FORGET PASSWORD </title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+        <style>
+            html {
+    scroll-behavior: smooth;
+}
+
+/* slider container */
+.slider {
+    display: flex;
+    width: 200vw; /* 2 pages */
+    height: 100vh;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+      overflow-x: hidden;
+     flex-shrink: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at 0% 80%,#5180f8,transparent 60%),
+                radial-gradient(circle at 80% 0%,#586784,transparent 60%),
+                linear-gradient(135deg,#03034d,#23234e);
+}
+
+.next-btn {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    width: 40%;
+     text-align: center;
+     font-weight: bold;
+    padding: 10px 20px;
+    background: #4CAF50;
+    border-radius: 6px;
+    display: flex;
+     margin: auto;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease all;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+}
+h1
+{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 0 0 10px #fff;
+    font-family: 'Lucida Sans', sans-serif;    
+}
+h6
+{
+    color: #e40b0b;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0 0 5px #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+}
+fieldset
+ {
+     background:white;
+     border: none;
+     border-radius: 10px;
+     padding: 30px;
+     width: 300px;
+     margin: 50px auto;
+ }
+input[type="text"], input[type="password"]
+{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"]:focus, input[type="password"]:focus
+{
+    border-color: #4CAF50;
+    outline: none;
+}
+#submit
+{
+    text-align: center;
+    margin-top: 20px;
+}
+input[type="submit"]
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+input[type="submit"]:hover
+{
+    background-color: #ff6213;
+}
+h3{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 0 0 10px #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+p {
+    text-decoration: none;
+    background: white;
+    padding:40px;
+    border-radius: 10px;
+    color: #333;
+    font-weight: bold;
+}
+p a{
+    color: #3b5ed9;
+    text-decoration: none;
+}
+        </style>
+       
+    </head>
+<body>
+
+<div class="slider">
+
+    <!-- PAGE 1 -->
+    <section class="page" id="page1">
+
+        <div class="main">
+
+            <h1>Forget Password</h1>
+
+            <fieldset>
+                <form method="POST" action="forget.php" >
+
+                    <h6>
+                        Enter your registered email and access code to reset your password.
+                    </h6>
+
+                    <input type="text" name="email" placeholder="username" required>
+
+                    <input type="password" name="accesspass"
+                    placeholder="Enter your Access Code" required>
+
+                    <div id="submit">
+                        <input type="submit" value="check">
+                    </div>
+
+                </form>
+            </fieldset>
+
+            <a href="#page2" class="next-btn">
+                Another Option 
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+
+        <h3>ANOTHER OPTION</h3>
+
+        <p>
+            Contact us at<br>
+            <a href="mailto:adishjagano@gmail.com">
+                support@yourapp.com
+            </a>
+        </p>
+
+        <a href="#page1" class="next-btn">
+             Back
+        </a>
+
+    </section>
+
+</div>
+
+</body>
+</html>

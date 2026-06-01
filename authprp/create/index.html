@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>CREATE ACCOUNT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="create.js">
+
+    </script> 
+</head>
+
+<body>
+    <div id="head">
+
+    </div>
+    <fieldset>
+        <div id="header">
+        <h3 id="Create">Create</h3>
+        <h3 id="Account">Account</h3>
+        </div>
+        <form method="POST" name="form1" onsubmit=" return check() " action="create.php">
+            <div id="inputs">
+            <input type="text" name="name" required placeholder="Enter your name">
+            <input type="tel" name="phno" required placeholder="Enter your mobile number">
+            <input type="email" name="mail" required placeholder="Enter your email">
+            <input type="text" name="username" required placeholder="Enter your username"> 
+            <input type="number" name="age" required placeholder="Enter your age">
+            <input type="password" name="passcode" required placeholder="Enter the password">
+            <input type="password" name="conpass" required placeholder="Confirm your password">
+            <input type="submit" value="Create"> 
+            </div>
+            
+        </form>
+    </fieldset>
+</body>
+</html>
