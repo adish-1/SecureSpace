@@ -30,6 +30,13 @@ It focuses on **security, user isolation, and real-world backend design principl
 
 ---
 
+
+## Live Demo
+🌐 [adish.free.nf/auth/login](https://adish.free.nf/auth/login)
+
+> Hosted on free.nf — Indexed and verified via Google Search Console
+---
+
 ## Folder Structure
 
 project/
